@@ -1,20 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HeroModule } from './Hero/hero.module';
-
+import { HeroComponent} from './hero.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
-    HeroModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ HeroComponent ]
 })
-export class AppModule { }
+
+export class HeroModule { }
